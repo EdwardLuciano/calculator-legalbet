@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CALC</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://web.legalcdn.org/assets/LB-BRB980-1/styles/fonts.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<div class="layout">
+		<div class="main">
+			<header></header>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9">
+						<h1>Калькулятор расчёта выигрыша</h1>
+						<div class="calculator">
+							<div class="calculator__title">Сколько можно выиграть?</div>
+							<form class="calculator-form" action="javascript:void(null);">
+								<div class="form-field">
+									<div class="form-field__desc-to-input">Если поставить, руб.</div>
+									<input type="text" class="form-field__input form-control" name="sumbet" placeholder="От 10 и больше">
+								</div>
+								<div class="form-field">
+									<div class="form-field__desc-to-input">На коэффициент</div>
+									<input type="text" class="form-field__input form-control" name="coefficient" placeholder="От 1 и больше">
+								</div>
+								<div class="form-field form-field_sum">
+									<div class="form-field__desc-to-input">Выплата</div>
+									<input type="text" class="form-field__input form-control sum" disabled="disabled">
+								</div>
+								<div class="form-field form-field_profit">
+									<div class="form-field__desc-to-input">Сумма выигрыша</div>
+									<input type="text" class="form-field__input form-control profit" disabled="disabled">
+								</div>
+								<div class="form-field justify-content-end">
+									<button class="btn calculator__btn" type="submit">Рассчитать</button>
+								</div>
+								<div class="error"></div>
+							</form>
+							<div class="calculator__footer">
+								<ul>
+									<li>Lorem ipsum is simply dummy of the printing and typesetting industry.</li>
+									<li>Lorem ipsum is simply dummy of the printing and typesetting industry.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-bookmakers"></div>
+					</div>
+					<div class="col-lg-3">
+						<div class="right-menu">
+						</div>
+						<div class="form-course">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sidebar">
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>

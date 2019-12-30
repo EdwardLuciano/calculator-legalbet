@@ -1,0 +1,209 @@
+html, body {
+	font-size: 16px;
+}
+body { 
+	background-color: #f0f1f2;
+	font-size: .875rem;
+	font-family: proxima nova,sans-serif;
+}
+.layout {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.main {
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 0 100%;
+	        flex: 1 0 100%;
+}
+.sidebar {
+    background-color: #000000;
+}
+h1,h2,h3 {
+    font-family: futura pt,sans-serif;
+    white-space: normal;
+}
+h4,h5,h6 {
+    font-family: proxima nova,sans-serif;
+    font-weight: 600;
+}
+h1 {
+	font-size: 3rem;
+	margin-bottom: 2.43rem;
+}
+header {
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.10196078431372549);
+    margin-bottom: 1.5rem;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    width: 100%;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.right-menu {
+	background-color: rgba(0, 0, 0, 0.10196078431372549);
+	height: 208px;
+	width: 100%;
+	margin-bottom: 1.5rem;
+	border-radius: 3px;
+}
+.form-course {
+	background-color: rgba(0, 0, 0, 0.10196078431372549);
+	height: 356px;
+	width: 100%;
+	margin-bottom: 1.5rem;
+	border-radius: 3px;
+}
+.list-bookmakers {
+	height: 454px;
+	width: 100%;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	margin-bottom: 1.5rem;
+}
+.calculator {
+	background-color: #FFFFFF;
+	padding: .93rem 1.56rem;
+	margin-bottom: 1.5rem;
+}
+.calculator-form {
+	max-width: 576px;
+}
+.calculator__title {
+	font-family: proxima nova,sans-serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 48px;
+	margin-bottom: 1rem;
+}
+.form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.form-field__input {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.06);
+            box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 3px;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    height: 2.5rem;
+    background-color: #FAFAFA;
+    font-weight: 600;
+    font-size: 0.93rem;
+}
+.form-field__input[disabled] {
+	background-color: #FAFAFA;
+}
+.form-field__input.profit {
+	color: rgba(98, 180, 53, 0.8);
+}
+.form-field_sum:not(.show), .form-field_profit:not(.show) {
+	display: none;
+}
+
+.calculator__btn {
+    background: #3498DB;
+    border-radius: 3px;
+    color: #FFFFFF;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% - 184px);
+            flex: 0 0 calc(100% - 184px);
+    font-weight: 600;
+}
+.calculator__footer {
+    margin-right: -1.56rem;
+    margin-left: -1.56rem;
+    border-top: 1px dashed rgba(0,0,0,0.3);
+}
+.calculator__footer > ul {
+    -webkit-padding-start: 2.87rem;
+            padding-inline-start: 2.87rem;
+    padding-top: 1.06rem;
+    list-style-type: none;
+}
+.calculator__footer > ul > li {
+	position: relative;
+}
+.calculator__footer > ul > li:before {
+    content: "";
+    height: 4px;
+    width: 4px;
+    display: block;
+    left: -1rem;
+    top: calc(50% - 2px);
+    position: absolute;
+    background-color: rgba(52, 152, 219, 0.8);
+    border-radius: 99rem;
+}
+.form-field__desc-to-input {
+	font-size: 1rem;
+	font-weight: 600;
+}
+.calculator__btn_color_red {
+	background-color: #D0021B;
+}
+@media(min-width: 576px) {
+	.form-field {
+	    -webkit-box-align: center;
+	        -ms-flex-align: center;
+	            align-items: center;
+	    -webkit-box-orient: horizontal;
+	    -webkit-box-direction: normal;
+	        -ms-flex-direction: row;
+	            flex-direction: row;
+	}
+	.form-field__desc-to-input {
+		-ms-flex-preferred-size: 184px;
+		    flex-basis: 184px;
+	    -webkit-box-flex: 1;
+	        -ms-flex-positive: 1;
+	            flex-grow: 1;
+	    padding-right: 24px;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+	}
+
+}
+@media(min-width: 1366px) {
+	.main {
+	    -webkit-box-flex: 1;
+	        -ms-flex: 1 0 auto;
+	            flex: 1 0 auto;
+	}
+	.sidebar {
+	    -webkit-box-flex: 0;
+	        -ms-flex: 0 0 286px;
+	            flex: 0 0 286px;
+	}
+}
+@media(max-width: 576px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	.calculator__title {
+		font-size: 1.12rem;
+	}
+	.form-field__desc-to-input {
+	    font-size: .875rem;
+	}
+
+}
